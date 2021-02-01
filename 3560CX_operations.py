@@ -174,7 +174,7 @@ def aaa_commands(console):
 def vtp_commands(console):
     print(send_command(console, cmd=b'vtp ver 2'))
     time.sleep(1)
-    print(send_command(console, cmd=b'vtp domain Alpine'))
+    print(send_command(console, cmd=b'vtp domain {{ domain }}'))
     time.sleep(1)
     print(send_command(console, cmd=b'vtp mode client'))
     time.sleep(1)
